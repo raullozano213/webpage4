@@ -1,0 +1,134 @@
+/* Fonts *****************/
+
+@font-face {
+  font-family: EastSeaDokdo;
+  src: url(EastSeaDokdo-Regular.ttf);
+}
+
+@font-face {
+  font-family: Ranchers;
+  src: url(Ranchers-Regular.ttf);
+}
+
+@font-face {
+  font-family: Anton;
+  src: url(Anton-Regular.ttf);
+
+}
+
+@font-face {
+  font-family: Ranchers2;
+  src: url(Ranchers-Regular.ttf);
+}
+/*************************/
+
+body {
+  display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(
+    45deg,
+    #ff9110,
+    #ff9110 10px,
+    #ef870d 10px,
+    #ef870d 20px
+  );
+}
+
+h1 {
+  font-family: EastSeaDokdo;
+}
+
+p {
+  font-family: Ranchers;
+}
+#box2 {
+  font-family: Anton;
+}
+
+
+#container{
+  position: relative;
+  top: 100px;
+  width: 500px;
+}
+
+#hero-image {
+display: flex;
+justify-content: center;
+}
+
+#hero-image img {
+  width: auto;
+  height: auto;
+}
+
+#container-box{
+  background: #fff;
+  padding: 30px;
+  margin: 40px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0.5);
+}
+ul {
+  position: relative;
+  margin: 40px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: left;
+  margin-left: 40px;
+}
+a {
+  font-family: Ranchers2;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+
+}
+a:hover{
+  background: white;
+  background: green;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
